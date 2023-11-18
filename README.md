@@ -39,14 +39,14 @@ O objetivo central do projeto é aprimorar a eficiência e a rapidez no processo
 # _Instrução_
 
 ## Instalação
-Siga estas etapas para instalar e configurar o Projeto XYZ em seu ambiente local:
+Siga estas etapas para instalar e configurar o Projeto Prontuário Dinâmico em seu ambiente local:
 
 1. Clone este repositório: `git clone https://github.com/seu-usuario/projeto-xyz.git`
 2. Navegue até o diretório do projeto: `cd projeto-xyz`
 3. Instale as dependências: `npm install` (ou `yarn install`)
 
 ## Uso
-Após a instalação, você pode iniciar o Projeto XYZ usando o seguinte comando:
+Após a instalação, você pode iniciar o Projeto Prontuário Dinâmico usando o seguinte comando:
 
 ```bash
 npm start
