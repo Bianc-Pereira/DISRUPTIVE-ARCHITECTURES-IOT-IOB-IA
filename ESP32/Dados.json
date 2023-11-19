@@ -1,0 +1,6 @@
+{
+    "ficha1" : {"id": 1, "nome": "João", "idade": 30, "prioridade": "azul"},
+    "ficha2" : {"id": 2, "nome": "Maria", "idade": 25, "prioridade": "verde"},
+    "ficha3" :  {"id": 3, "nome": "Carlos", "idade": 40, "prioridade": "amarelo"},
+    "ficha4" : {"id": 4, "nome": "Ana", "idade": 50, "prioridade": "vermelho"}
+}
