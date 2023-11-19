@@ -1,0 +1,118 @@
+[
+    {
+        "id": "6176703187b4e313",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f2c70145d56efdb9",
+        "type": "mqtt in",
+        "z": "6176703187b4e313",
+        "name": "",
+        "topic": "teste_fiap",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "092ec0065d3d7680",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "ecb281836b532ab3"
+            ]
+        ]
+    },
+    {
+        "id": "6706d69fc05a87c7",
+        "type": "debug",
+        "z": "6176703187b4e313",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ecb281836b532ab3",
+        "type": "function",
+        "z": "6176703187b4e313",
+        "name": "Condicao",
+        "func": "if (msg.payload) {\n    \n    var dados = msg.payload;\n\n    var dadosVermelhos = Object.values(dados).filter(function(item) {\n        return item.prioridade === \"vermelho\";\n    });\n\n    msg.payload = dadosVermelhos;\n\n    return msg;\n} else {\n    // Se 'payload' não estiver presente, criar uma mensagem vazia\n    msg.payload = [];\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 100,
+        "wires": [
+            [
+                "6706d69fc05a87c7",
+                "2c5bb2025c94b3bf"
+            ]
+        ]
+    },
+    {
+        "id": "2c5bb2025c94b3bf",
+        "type": "mqtt out",
+        "z": "6176703187b4e313",
+        "name": "",
+        "topic": "teste_fiap_out",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "092ec0065d3d7680",
+        "x": 660,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "092ec0065d3d7680",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.mqttdashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "test2",
+        "birthQos": "0",
+        "birthRetain": "true",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": "3600"
+    }
+]
