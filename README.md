@@ -18,7 +18,7 @@ Com isso, desenvolvemos um prontuário dinâmico, que registra todos os dados do
 
 Explicando melhor sobre as cores, quando o paciente recebe uma cor, significa um certo grau de prioridade no atendimento:
 
-Azul: Não urgente. Podem aguardar atendimento ou serem encaminhados para outros serviços de saúde
+Azul: Não urgente. Podem aguardar atendimento ou serem encaminhados para outros serviços de saúde.
 
 Verde: Pouco urgente. Podem aguardar atendimento ou serem encaminhados para outros serviços de saúde.
 
@@ -39,42 +39,39 @@ O objetivo central do projeto é aprimorar a eficiência e a rapidez no processo
 ## Instalação
 Siga estas etapas para instalar e configurar o Projeto Prontuário Dinâmico em seu ambiente local:
 
-1. Faça login na sua conta WOKWI: `https://wokwi.com/projects/new/arduino-uno`
+1. Faça login na sua conta WOKWI: https://wokwi.com/projects/new/arduino-uno
 
 2. Monte um circuito com buzzer, led, dois resistores e um ESP32
 
-3. Insira no campo o código fonte na pasta: `https://github.com/Bianc-Pereira/DISRUPTIVE-ARCHITECTURES-IOT-IOB-IA/blob/main/ESP32/main.py`
+3. Insira no campo o código fonte na pasta: https://github.com/Bianc-Pereira/DISRUPTIVE-ARCHITECTURES-IOT-IOB-IA/blob/main/ESP32/main.py
 
 4. Instale as bibliotecas :
-import network
-import network
-from machine import Pin, PWM
-import dht
-import ujson
-from umqtt.simple import MQTTClient
-import json
-import time
 
-5. Verificar se o Node esta instalado. Caso não esteja, usar o seguinte link para instalação : `https://nodejs.org/en`
-6. Instalar Node-Red. Caso não esteja instalado, usar o seguinte código no cmd: `npm install -g --unsafe-perm node-red`
-7. "node-red" (código para abrir o node-red)
-8. Ao executar o Node-RED, abrir no navegador a porta localhost http://127.0.0.1:1880/red/
-9. Inserir e debugar o seguinte flow: `https://github.com/Bianc-Pereira/DISRUPTIVE-ARCHITECTURES-IOT-IOB-IA/blob/main/Node-red/flows.json`
-10. Verificar se o flow devolve a seguinte mensagem:
+      import network
+
+      from machine import Pin, PWM
+
+      import dht
+
+      import ujson
+
+      from umqtt.simple import MQTTClient
+
+      import json
+
+      import time
+
+6. Verificar se o Node esta instalado. Caso não esteja, usar o seguinte link para instalação : https://nodejs.org/en
+7. Instalar Node-Red. Caso não esteja instalado, usar o seguinte código no cmd: `npm install -g --unsafe-perm node-red`
+8. "node-red" (código para abrir o node-red)
+9. Ao executar o Node-RED, abrir no navegador a porta localhost http://127.0.0.1:1880/red/
+10. Inserir e debugar o seguinte flow: https://github.com/Bianc-Pereira/DISRUPTIVE-ARCHITECTURES-IOT-IOB-IA/blob/main/Node-red/flows.json
+11. Verificar se o flow devolve a seguinte mensagem:
    
     ![Captura de tela 1](https://private-user-images.githubusercontent.com/126917573/284101942-1daf6f1e-657b-4dc3-a0e0-e4aecb82ec01.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA2MDkyMjgsIm5iZiI6MTcwMDYwODkyOCwicGF0aCI6Ii8xMjY5MTc1NzMvMjg0MTAxOTQyLTFkYWY2ZjFlLTY1N2ItNGRjMy1hMGUwLWU0YWVjYjgyZWMwMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTEyMVQyMzIyMDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZDRmMDg5YzNkNGY2ZDg4ZGJmMDgzZTkzNGMzOGI1M2IxMWE1NWZlNjdmYjBkZThlZGIwNmZhOGVlMzI2YzVlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Kz1iLllwbugbKAVs9GyWGgU_6eSpVvxlahkplLLvsjY)
 
-11. Acompanhar no ESP32 a executação do protótipo
-    `https://youtu.be/aaU7igDeAX0`
-
-
-
-## Uso
-Após a instalação, você pode iniciar o Projeto Prontuário Dinâmico usando o seguinte comando:
-
-```bash
-npm start
-```
+12. Acompanhar no ESP32 a executação do protótipo
+    https://youtu.be/aaU7igDeAX0
 
 # _Códigos-fonte da função Node-RED_
 
