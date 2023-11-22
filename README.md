@@ -1,4 +1,10 @@
 # DISRUPTIVE-ARCHITECTURES-IOT-IOB-IA
+
+# Participantes 
+### RM:96269 - Bianca Dos Santos Pereira
+
+### RM:94764 - Erick Soares de Alecrim Mergulhão
+
 # Projeto Prontuário Dinâmico
 # _Descrição_
 
